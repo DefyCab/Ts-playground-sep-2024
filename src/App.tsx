@@ -36,7 +36,7 @@ function App() {
           style={{ paddingTop: "20px" }}
         >
           {list.map((item) => (
-            <li className="text-2xl text-red-500"
+            <li className="text-2xl text-slate-300"
             key={item.id}>{item.item}</li>
           ))}
         </ul>
