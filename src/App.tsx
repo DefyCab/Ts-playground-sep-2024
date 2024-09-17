@@ -29,7 +29,7 @@ function App() {
           onClick={handleClick}
           className="bg-teal-500 text-white rounded py-2 px-4"
         >
-          Toggle
+          Show shopping list
         </button>
         <ul
           className={isHidden ? "hidden" : ""}
