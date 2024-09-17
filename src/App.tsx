@@ -1,9 +1,18 @@
 import { useState } from "react"
 
-const shoppingList: Items[] = []
+const shoppingList: Items[] = [
+  {
+    id: 1,
+    item: "Milk",
+  },
+  {
+    id: 2,
+    item: "Goat cheese",
+  },
+]
 
 type Items = {
-  id: 1
+  id: number
   item: string
 }
 
