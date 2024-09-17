@@ -1,5 +1,12 @@
 import { useState } from "react"
 
+const shoppingList: Items[] = []
+
+type Items = {
+  id: 1
+  item: string
+}
+
 function App() {
   const [isHidden, setIsHidden] = useState(true)
 
