@@ -18,6 +18,7 @@ type Items = {
 
 function App() {
   const [isHidden, setIsHidden] = useState(true)
+  const [list, setList] = useState(shoppingList)
 
   const handleClick = () => setIsHidden(!isHidden)
 
@@ -30,12 +31,14 @@ function App() {
         >
           Toggle
         </button>
-        <h1
+        <ul
           className={isHidden ? "hidden" : ""}
           style={{ color: "red", paddingTop: "10px" }}
         >
-          SECRET MESSAGE!
-        </h1>
+          {list.map((item) => (
+            <li key={item.id}>{item.item}</li>
+          ))}
+        </ul>
       </div>
     </>
   )
