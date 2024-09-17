@@ -33,10 +33,11 @@ function App() {
         </button>
         <ul
           className={isHidden ? "hidden" : ""}
-          style={{ color: "red", paddingTop: "10px" }}
+          style={{ paddingTop: "20px" }}
         >
           {list.map((item) => (
-            <li key={item.id}>{item.item}</li>
+            <li className="text-2xl text-red-500"
+            key={item.id}>{item.item}</li>
           ))}
         </ul>
       </div>
